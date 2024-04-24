@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            tools:context=".CreateBiodata">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:backgroundTint="#004E1D93"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="NIM" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_alignLeft="@+id/textView1"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColorHighlight="@color/black"
+                android:textColorLink="@color/black">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:layout_alignLeft="@+id/editText1"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignLeft="@id/textView2"
+                android:inputType="text"
+                android:maxLength="20" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText2"
+                android:layout_alignLeft="@+id/editText2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Tanggal Lahir" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_alignLeft="@+id/textView3"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText3"
+                android:layout_alignLeft="@+id/editText3"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Jenis Kelamin" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_alignLeft="@+id/textView4"
+                android:hint="L atau P"
+                android:inputType="text"
+                android:maxLength="1" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText4"
+                android:layout_alignLeft="@+id/editText4"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_alignLeft="@+id/textView5"
+                android:inputType="text"
+                android:maxLength="100" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button1"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText5"
+                android:layout_alignParentBottom="true"
+                android:background="#14B502"
+                android:drawableLeft="@drawable/ic_done"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Simpan"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText5"
+                android:layout_alignRight="@+id/editText5"
+                android:layout_alignParentBottom="true"
+                android:background="#0928D8"
+                android:drawableLeft="@drawable/ic_arrow"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Kembali"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="244dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="350dp"
+                app:srcCompat="@drawable/dodo" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
